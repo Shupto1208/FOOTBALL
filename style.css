@@ -1,0 +1,383 @@
+
+    /* First Page (Introduction)  */
+
+
+body{
+
+    background-color: #f9fce7;
+
+     
+
+}
+.container{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     
+    
+
+
+}
+
+section{
+    background: linear-gradient(rgb(9, 205, 231) , rgb(8, 4, 252) );
+    border-radius: 20px; 
+    width: 900px;
+    padding: 30px; 
+    box-shadow: 5px 5px 20px black;
+    font-family: 'Poppins', sans-serif; 
+    
+
+}
+
+
+
+.introduction-content-img{
+   display: flex;
+   justify-content:space-between;
+   align-items: center; 
+} 
+
+
+.introduction-content-img img{
+   
+    width: 455px;
+    height: 355px;
+    transition: width 2s, height 2s  ;
+}
+
+.introduction-content-img img:hover{
+    width: 500px;
+    height: 390px;
+}
+
+    
+    
+
+h1{
+   color: whitesmoke;
+   font-size: 50px;
+   line-height: 20px;
+}
+
+h1:hover{
+    font-family: 'Otomanopee One', sans-serif;
+    color:black;
+} 
+
+P{
+    font-family: 'Poppins', sans-serif; 
+}
+
+
+a{
+    text-decoration: none;
+    color: rgb(6, 43, 252);
+    font-size: 25px;
+    padding: 4px;
+    background-color: darkturquoise;
+    border-radius: 8px;
+}
+
+hr{
+    
+    border: 2px solid rgb(14, 13, 13);
+    width: 800px;
+}
+
+/* First Page (Introduction)  */
+
+
+
+
+
+/* Second Page (Players) */
+
+.section-2{
+
+    background-color: maroon;
+    border-radius: 20px;
+    padding: 30px; 
+    width: 900px;
+    padding-left:13px; 
+    margin-top: 30px;
+    box-shadow: 5px 5px 20px black;
+
+
+}
+.player{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px ;
+}
+
+
+.player-card{
+    width: 290px;
+    padding: 4px;
+    background-color: gold;
+    transition: transform 2s;
+}
+.player-card:hover{
+    transform: rotateY(360deg);
+}
+
+
+.p-name{
+
+    font-family: 'Otomanopee One', sans-serif;
+    color: black;
+    font-size: 35px;
+}
+
+/* Second Page (Players) */
+
+
+/* ABOUT US, CONTACT US, SOCIAL LINKS  */
+.section-4{
+
+    width: 900px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 20px;
+    padding-left: 30px;
+    border-radius: 10px;
+    background-color: rgb(241, 182, 20);
+
+}
+li{
+    position: relative;
+    right: 30px;
+    font-weight: 900;
+    font-size: 35px;
+}
+/* ABOUT US, CONTACT US, SOCIAL LINKS  */
+
+
+/* SPONSORS & AFFILIATIONS */
+.section-5{
+
+    width: 900px;
+    background-color: rgb(252, 123, 4);
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.sec-5-head{
+    font-family: 'Otomanopee One', sans-serif;
+    color: black;
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+#sponsors{
+    padding-left: 100px;
+}
+
+/* SPONSORS & AFFILIATIONS */
+
+
+
+
+
+/* LOGO&LINKS Section */
+
+.logo-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+.social-link img{
+    padding: 5px;
+
+}
+
+/* LOGO&LINKS Section */
+
+
+
+
+
+
+
+
+
+/* For Mobile Devices */
+
+@media only screen and (max-width:688px)  {
+    
+     .container {
+        width: 100%;
+    } 
+  
+    .introduction-content-img{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        } 
+
+    .introduction-content-img  img{
+        padding-top: 30px;
+        position: relative;
+        right: 8px;
+        
+    }
+    
+
+
+    
+    .player{
+
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+           }
+
+   
+
+
+
+    .section-4{
+
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+
+    .section-4 div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .section-5 div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      #sponsors{
+        padding-left: 30px;
+    }
+      
+
+
+
+    .logo-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        position: relative;
+        right: 20px;
+    }
+
+
+    .container{
+
+        overflow:hidden;
+        
+        
+    }
+    
+    body{
+
+        margin: 0%;
+    }
+}
+
+
+
+@media only screen and (max-width:470px) and (min-width:340px) {
+    
+    .container {
+       width: 100%;
+   } 
+ 
+   .introduction-content-img{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       } 
+
+   .introduction-content-img  img{
+       padding-top: 30px;
+       width: 340px;
+       position: relative;
+       right: 4px;
+   }
+   h1{
+       font-size: 45px;
+   }
+  
+   
+   .player{
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+          }
+
+     
+          
+          
+    .section-4 div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+
+    .section-5 div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+    
+    #sponsors{
+        padding-left: 30px;
+        }
+
+
+    .logo-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        position: relative;
+        right: 15px;
+        }
+   .container{
+
+       overflow:hidden;
+       
+       
+   }
+   
+   body{
+
+       margin: 0%;
+   }
+} 
+/* For Mobile Devices */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
